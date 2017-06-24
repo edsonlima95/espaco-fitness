@@ -15,15 +15,15 @@ section.conteudo-boasvindas a .btn-cor {color: #AA9550;}
 div.img2 .frase-paralax p {color: #AA9550; font-size: 50px; font-family: fantasy; margin-top: 50px}
 
 /*MENU.*/
-nav#menu-desk {background: rgba(0,0,0,0); border: none; margin-bottom: 0; height: 61px; padding-right: 40px; display: table; width: 100%}
+nav#menu-desk {background: #000; border: none; margin-bottom: 0; height: 61px; padding-right: 40px; display: table; width: 100%}
 .navbar-inverse .navbar-nav > li > a {line-height: 30px; font-family: 'Yellowtail', cursive; font-size: 20px; color: #fff}
 .navbar-inverse .navbar-nav > li > a:hover {color: #AA9550}
 .navbar-inverse .navbar-toggle {border-color: #AA9550}
 .navbar-inverse .navbar-toggle .icon-bar {background-color: #AA9550}
 
 /*SERVIOS.*/
-section#servicos {display: flex; flex-wrap: wrap; margin-top: 100px; padding-bottom: 50px}
-section#servicos article {text-align: center; margin-bottom: 30px}
+section#servicos {display: flex; flex-wrap: wrap; margin-top: 100px; padding-bottom: 50px;}
+section#servicos article {text-align: center; margin-bottom: 30px;}
 section#servicos article p {font-size: 17px; font-family: 'Roboto', sans-serif }
 section#servicos article h1:hover, section#servicos article p:hover {color: #AA9550}
 section#servicos article img {width: 100px; height: 70px}
@@ -32,12 +32,14 @@ section#servicos article button a {color: #333}
 
 /*QUEM SOMOS.*/
 section#quem-somos {padding: 40px 0 40px 0; }
-section#quem-somos .bloco2 {background: #262626; color: #AA9550; text-align: center; height: 375px}
+section#quem-somos .bloco1 {display: none}
+section#quem-somos .bloco2 {background: #262626; color: #AA9550; text-align: center; height: 375px; display: none}
 
 /*NOSSO TIME.*/
 section#nosso-time {display: flex; flex-wrap: wrap; background: #262626; color: #AA9550; padding-bottom: 80px; width: 100%; text-align: center}
 section#nosso-time span {font-size: 20px}
 section#nosso-time img {height: 300px; background-size: cover; border-radius: 10px}
+/*section#nosso-time article {display: none}*/
 section#nosso-time article figure {position: relative; margin-bottom: 10px}
 section#nosso-time article figure .per-dados {position: absolute; width: 100%; padding: 5px; background: rgba(0,0,0, .7); height: 200px; bottom: 0; display: none}
 section#nosso-time article figure .per-dados p {padding-top: 30px; font-size: 16px}

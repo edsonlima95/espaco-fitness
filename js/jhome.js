@@ -18,13 +18,8 @@ $(function () {
     $(window).scroll(function () {
         var wScroll = $(this).scrollTop();
         var sArticle = $('#servicos article').offset().top;
-        //Coloca o background na barra.
-        if (wScroll >= 100) {
-            $('nav#menu-desk').css('background', 'rgba(0,0,0,1)');
-        } else {
-            $('nav#menu-desk').css('background', 'rgba(0,0,0,0)');
-        }
-
+        var sQuemsomos = $('section#quem-somos').offset().top;
+       
         //Adiciona o animate css aos serviços.
         if (wScroll >= 300) {
 
@@ -33,10 +28,28 @@ $(function () {
             });
         }
         
-        //ADICIONA O EFEITO DA FRASE DO PARALLAX 2
+         //ADICIONA O EFEITO DA FRASE DO PARALLAX 2
         if (wScroll > 1100) {
-            $('div.frase-paralax').css('display', 'block').addClass('animated fadeInRight');
+            $('div.frase-paralax').css('display','block').addClass('animated fadeInRight');
         }
+        
+        //Adiciona o animate css aos quem samos.
+        if (wScroll >= 1600) {
+            $('section#quem-somos').find('.bloco1').css('display','block').addClass('animated slideInLeft');
+            $('section#quem-somos').find('.bloco2').css('display','block').addClass('animated slideInRight');
+        }
+        
+        //Adiciona o animate css aos perssonal.
+        if (wScroll >= 2100) {
+            $('section#nosso-time').find('article').addClass('animated flipInX');
+        }
+        
+        //Galeria.
+        $('section#galeria img').on('mouseover', function () {
+            $(this).addClass('animated pulse');
+        });
+        
+       
     });
 
     //adiciona a imagem ao paralax.
