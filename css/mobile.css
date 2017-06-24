@@ -20,7 +20,7 @@
     section#produtos {align-items: center; justify-content: center; flex-direction: column}
     
     /*CAROUSEL IMG.*/
-    .carousel-inner > .item img {height: 250px}
+    .carousel-inner > .item img {height: 180px}
     
     /*Setas do carousel.*/
     .carousel-control span i {width: 55px; height: 55px; padding-top: 20px}
@@ -28,6 +28,10 @@
     /*Conteudo do carousel.*/
     .carousel-caption h1 {font-size: 22px}
     .carousel-caption p {font-size: 12px}
+    
+    /*Matricula.*/
+    section#matricula .conteudo-matricula h1 {font-size: 38px}
+    section#matricula .conteudo-matricula p {font-size: 15px}
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px)  {
