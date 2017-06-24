@@ -1,8 +1,35 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
-   
+
+    /*MENU.*/
+    nav#menu-desk {background: #000}
+
+    /*Frase do paralax 2.*/
+    div.img2 .frase-paralax p {font-size: 40px}
+
+    /*Imagem do quem somos.*/
+    section#quem-somos .bloco1 {padding: 0; }
+    section#quem-somos .bloco2 {padding: 1px; }
+
     /*QUEM SOMOS.*/
     section#quem-somos .bloco2 {padding: 0; margin-top: 30px}
-    
+
     /*FORM MATRICULA.*/
     section#cadastro form {width: 100%}
+    
+    /*Produtos.*/
+    section#produtos {align-items: center; justify-content: center; flex-direction: column}
+    
+    /*CAROUSEL IMG.*/
+    .carousel-inner > .item img {height: 250px}
+    
+    /*Setas do carousel.*/
+    .carousel-control span i {width: 55px; height: 55px; padding-top: 20px}
+    
+    /*Conteudo do carousel.*/
+    .carousel-caption h1 {font-size: 22px}
+    .carousel-caption p {font-size: 12px}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px)  {
+    section#quem-somos .bloco2 h1 {font-size: 28px}
 }
